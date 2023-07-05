@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTU12 Team</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bronius.css">
+</head>
+
+<body>
+    <header>
+        {% include 'includes/menu.html' %}
+    </header>
+    <main>
+        <sidebar>
+            {% include 'includes/sidebar.html' %}
+        </sidebar>
+
+        <div class="content">
+            <h1>Bronius</h1>
+            <p>Specializes in Python application development. Today I am learning HTML and CSS. Here are my experiments in HTML and CSS below:</p>
+                       
+<!-- 
+            <h1>My H1 heading</h1>
+            <h2 style="color: red;">My H2 heading</h2>
+            <h3 style="color: grey;">My H3 heading</h3> -->
+            <h1>My H1 heading</h1>
+            <h2>My H2 heading</h2>
+            <h3>My H3 heading</h3>
+            <h4>My H4 heading</h4>
+            <h5>My H5 heading</h5>
+            <h6>My H6 heading</h6>
+
+            <h2>Testing paragraphs</h2>                
+            <p>First paragraph</p>
+            <p>Second paragraph</p>
+            <!-- <p style="background-color:orange;border:2px solid Tomato;">Styled paragraph</p> -->
+
+            <h2>Testing links</h2>
+            <p>This is my link: <a href="https://google.com">Google</a></p>
+
+            <h2>Testing formatting</h2>            
+            <b>Bold text</b>
+            <strong>Strong text</strong>
+            <i>Italic text</i>
+            <small>Small text</small>
+            <mark>Marked text</mark>
+            <del>Deleted text</del>
+            <ins>Inserted text</ins>
+            <sub>Subscript</sub>
+            <sup>Superscript</sup>
+    
+            <h2>Testing tables</h2>  
+            <table>
+                <tr>
+                    <th>Header1</th><th>Header2</th><th>Header3</th>
+                </tr>
+                <tr>
+                    <td>First</td>
+                    <td>Second</td>
+                    <td>Third</td>
+                </tr>
+                <tr>
+                    <td>One</td>
+                    <td>Two</td>
+                    <td>Three</td>
+                </tr>
+            </table>
+
+            <h2>Testing links</h2>
+            <h3>Unordered list</h3>
+            <ul>
+                <li>Unordered list item 1</li>
+                <li>Unordered list item 2</li>
+                <li>Unordered list item 3</li>
+            </ul>
+            <h3>Ordered list</h3>
+            <ol>
+                <li>Ordered list item 1</li>
+                <li>Ordered list item 2</li>
+                <li>Ordered list item 3</li>
+            </ol>
+
+            <h2>Testing images</h2>
+            <img src="/static/tesla.png" alt="Tesla">
+
+            <!-- <h2>Testing comments</h2>            -->
+
+            <h2>Testing HTML classes</h2>
+            <p class="blue">Blue text</p>
+            <p class="red">Red text</p>
+            <p class="green">Green text</p>
+            <p class="blue_white">Blue background white text</p>
+            <p class="red_white">Red background white text</p>
+            <p class="green_white">Green background white text</p>
+
+            <h2>Testing HTML IDs</h2>
+            <p id="unique">Unique style</p>
+
+            <h2>Testing simple JavaScript</h2>
+            <button type="button" onclick="second_text()">Show second text</button>
+            <button type="button" onclick="first_text()">Show first text</button>
+            <p id="text">First text. First text.</p>
+
+            <h2>Testing Emojis</h2>
+            <p style="font-size: 50px">&#128526&#129299&#128526</p>
+
+            <h2>Testing gradient</h2>
+            <p id="gradient">Hello</p>
+
+            <h2>Embedding YouTube</h2>          
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ewZ_YWbIWXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    </main>
+    <footer>
+        {% include 'includes/footer.html' %}
+    </footer>
+
+    <script>
+        function second_text() {
+            document.getElementById("text").innerHTML = "Second text. Second text.";
+        }
+        function first_text() {
+            document.getElementById("text").innerHTML = "First text. First text.";
+        }
+    </script>
+</body>
+</html>
